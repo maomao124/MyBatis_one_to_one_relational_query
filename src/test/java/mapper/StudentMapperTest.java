@@ -25,9 +25,15 @@ import static org.junit.jupiter.api.Assertions.*;
  * Description(描述)： 测试类
  */
 
+
 class StudentMapperTest
 {
 
+    /**
+     * Gets student information.
+     *
+     * @throws IOException the io exception
+     */
     @Test
     void getStudentInformation() throws IOException
     {
@@ -45,6 +51,11 @@ class StudentMapperTest
         sqlSession.close();
     }
 
+    /**
+     * Gets student information 1.
+     *
+     * @throws IOException the io exception
+     */
     @Test
     void getStudentInformation1() throws IOException
     {
