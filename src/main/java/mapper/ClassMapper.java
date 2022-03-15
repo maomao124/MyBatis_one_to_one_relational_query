@@ -1,5 +1,7 @@
 package mapper;
 
+import org.apache.ibatis.annotations.Param;
+
 /**
  * Project name(项目名称)：MyBatis一对一关联查询
  * Package(包名): mapper
@@ -15,5 +17,5 @@ package mapper;
 
 public interface ClassMapper
 {
-    public data.Class getClass(Long class_no);
+    public data.Class getClass(@Param("class_no") Long class_no);
 }

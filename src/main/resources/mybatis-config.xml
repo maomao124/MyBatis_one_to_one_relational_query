@@ -76,7 +76,7 @@
         <!--设置别名   alias：别名 ，type类的全名-->
         <!--<typeAlias alias="" type=""/>-->
         <!--同一个包下的多个类定义别名  name：包名-->
-        <package name="t1"/>
+        <package name="data"/>
     </typeAliases>
 
 
@@ -90,7 +90,7 @@
     </typeHandlers>
 
 
-<!--*****************************************************************************-->
+    <!--*****************************************************************************-->
 
 
     <!--Mybatis插件-->
@@ -140,6 +140,7 @@
 
     <!--将mapper文件加入到配置文件中，指定MyBatisSQL映射文件的路径-->
     <mappers>
-        <mapper resource=""/>
+        <!--        <mapper resource=""/>-->
+        <package name="mapper"/>
     </mappers>
 </configuration>
