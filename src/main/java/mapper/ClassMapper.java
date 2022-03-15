@@ -15,7 +15,15 @@ import org.apache.ibatis.annotations.Param;
  * Description(描述)： 无
  */
 
+
 public interface ClassMapper
 {
+
+    /**
+     * Gets class.
+     *
+     * @param class_no the class no
+     * @return the class
+     */
     public data.Class getClass(@Param("class_no") Long class_no);
 }

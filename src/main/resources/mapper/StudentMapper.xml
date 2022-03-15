@@ -26,4 +26,11 @@
         from student
         where student_no = #{student_no}
     </select>
+
+
+
+
+    <select id="getStudentInformation1" resultType="data.Student">
+
+    </select>
 </mapper>

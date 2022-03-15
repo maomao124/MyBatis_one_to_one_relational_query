@@ -15,7 +15,24 @@ import org.apache.ibatis.annotations.Param;
  * Description(描述)： 无
  */
 
+
 public interface StudentMapper
 {
+    /**
+     * Gets student information.
+     * 多步查询
+     *
+     * @param student_no the student no
+     * @return the student information
+     */
     public data.Student getStudentInformation(@Param("student_no") Long student_no);
+
+    /**
+     * Gets student information 1.
+     * 单步查询
+     *
+     * @param student_no the student no
+     * @return the student information 1
+     */
+    public data.Student getStudentInformation1(@Param("student_no") Long student_no);
 }
